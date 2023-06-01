@@ -1,12 +1,5 @@
 ## House Price Prediction Analysis for Real Estate Agents In King County
 
-
-![KING_COUNTY_HOUSE_PRICE_ANALYSIS-GROUP_3](C:/Users/ADMIN/Phase2-DataScience-Project/KING_COUNTY_HOUSE_PRICE_ANALYSIS-GROUP_3.PNG)
-
-
-
-
-
 ### A well executed sample project, that uses multi linear regression and python code to show how to predict house prices based on various factors
 
 # Project overview
@@ -41,9 +34,6 @@ We transformed the the "  " column from categorical to numerical using ordinal e
 The analysis utilizes multiple linear regression, a powerful statistical technique, to identify the significant factors that contribute to house prices in the King County area. By examining the relationships between the independent variables (house features) and the dependent variable (sale price), the model generates predictions that can be used to guide pricing strategies and inform buying or selling decisions.
 
 # Modelling
-
-![project](C:/Users/ADMIN/Phase2-DataScience-Project/project.gif)
-
 
 # Regression Results
 
