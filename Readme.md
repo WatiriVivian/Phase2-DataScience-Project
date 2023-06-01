@@ -1,5 +1,5 @@
 ## House Price Prediction Analysis for Real Estate Agents In King County
-####### A well executed sample project, that uses multi linear regression and python code to show how to predict house prices based on various factors
+A well executed sample project, that uses multi linear regression and python code to show how to predict house prices based on various factors
 
 # Project overview
 
