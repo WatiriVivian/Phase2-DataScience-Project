@@ -19,23 +19,39 @@ By applying multi linear regression  and analyzing the King County housing datas
 
 # Dataset & Data Understanding
 
-This project uses the King County House Sales dataset which can be found in kc_house_data.csv in the data folder in this GitHub repository. The description of the column names can be found in column_names.md in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+This project utilizes the King County House Sales dataset, which is available in the `kc_house_data.csv` file located in the `data` folder of this GitHub repository. A comprehensive description of the column names can be found in the `column_names.md` file in the same folder. While the column names provide some information, it is important to note that further research or informed judgment may be necessary to fully understand the meaning of the data.
 
-For this analysis, we worked with the following columns and dropped the rest:
+The analysis performed on the dataset included the following steps:
 
-We dropped duplicate data from columns using the 'Id' column.
+1. Data Cleaning: Rows with missing data were dropped, and duplicate entries were removed based on the `id` column.
 
-We dropped rows with missing data from the columns we used.
+2. Data Transformation: Categorical data in the `view` and `waterfront` columns were converted into numerical data.
 
-We transformed the the "  " column from categorical to numerical using ordinal encoding.
+3. Exploratory Data Analysis: Various checks were conducted to assess the linearity assumptions between the target and predictor variables and identify any potential multicollinearity issues.
+
+4. Feature Engineering: Certain columns were transformed to enhance their usefulness. For example, the `date` column was converted into a categorical variable representing the season, and the `yr_renovated` column was modified to indicate the number of years since the last renovation. Additionally, the `yr_built` column was modified to the age of each house.
+
+By performing these steps, we aimed to gain a comprehensive understanding of the dataset and prepare it for further analysis and modeling.
 
 
 # Methology
 
 The analysis utilizes multiple linear regression, a powerful statistical technique, to identify the significant factors that contribute to house prices in the King County area. By examining the relationships between the independent variables (house features) and the dependent variable (sale price), the model generates predictions that can be used to guide pricing strategies and inform buying or selling decisions.
 
-# Modelling
+## Modelling
 
+During the analysis, we developed and evaluated four models to gain insights and make predictions. Here is an overview of the models:
+
+**Model 1: Baseline Model**
+The baseline model included nearly all available feature variables. Categorical variables were converted into dummy variables for modeling purposes. We further refined the model by testing for linear assumptions, ensuring that the relationships between the predictors and the target variable followed a linear pattern.
+
+**Model 2: Feature Selection and Refinement**
+In the second model, we focused on addressing multicollinearity issues and high p-values associated with certain features. We identified and removed features with high multicollinearity to enhance the model's stability and interpretability. Additionally, we examined linearity assumptions by using partial regression plots and checked for outliers in both the target and predictor variables, subsequently removing any outliers identified.
+
+**Model 3: Assumption Testing and Transformation**
+For the third model, we conducted tests to verify key assumptions of linear regression. We assessed homoscedasticity using the Breusch-Pagan test, checked for normality through the Jarque-Bera test and the K-test, and examined the skewness of the target variable. To address skewness, we applied a logarithmic transformation to the target variable, aiming to reduce skewness and improve the model's performance.
+
+By building and refining these models, we aimed to explore different aspects of the data and address potential challenges such as multicollinearity, linearity assumptions, and outliers. The iterative modeling process allowed us to gain insights into the relationships between variables and identify the most appropriate approach for predicting house prices in the King County dataset.
 # Regression Results
 
 # Conclusion
