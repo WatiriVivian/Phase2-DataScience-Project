@@ -55,7 +55,36 @@ In the second model, we focused on addressing multicollinearity issues and high 
 For the third model, we conducted tests to verify key assumptions of linear regression. We assessed homoscedasticity using the Breusch-Pagan test, checked for normality through the Jarque-Bera test and the K-test, and examined the skewness of the target variable. To address skewness, we applied a logarithmic transformation to the target variable, aiming to reduce skewness and improve the model's performance.
 
 By building and refining these models, we aimed to explore different aspects of the data and address potential challenges such as multicollinearity, linearity assumptions, and outliers. The iterative modeling process allowed us to gain insights into the relationships between variables and identify the most appropriate approach for predicting house prices in the King County dataset.
+
+Model 4: Log Transformation 
+
+In this regression model, a log transformation was applied to the dependent variable, which is the housing price (log(price)). The purpose of this transformation was to address potential issues of heteroscedasticity or nonlinearity in the relationship between the predictors and the price.
+
+Model 5: Log transformation of feature variables
+
+In this regression model, a log transformation was applied to the predictor variable 'sqft_living' (square footage of living space). The purpose of this transformation was to address potential nonlinearity in the relationship between the predictor and the housing price.
+
+By taking the logarithm of the 'sqft_living' variable, the model captured the proportional change in the housing price associated with an increase in  the living space. This can be beneficial when the relationship between the predictor and the price is not strictly linear, as it allows for a more flexible and accurate representation of the data.
+
+Model 6: More Log transformation
+
+This regression model aims to explain the relationship between housing prices and various factors. The model uses several predictor variables, such as the number of bedrooms, the size of the living area, the number of floors, the distance from downtown Seattle, the age of the house, whether it has a waterfront view, and the season of sale. Additionally, it includes logarithm transformations of the living area and the age of the house to capture potential nonlinear relationships.
+Model 6 was the model of choice for the analysis. It provided most  insights into the factors influencing housing prices
+
+
 # Regression Results
+Some of the significant results of the regression analysis were:
+Spring and summer are the best times to sell houses while fall and winter are the best times to buy
+
+Square Footage of Living Space: The square footage of living space has a positive impact on house prices. As the size of the living space increases, the estimated price of the house also increases. This indicates that larger houses are generally priced higher.
+
+Floors: The number of floors in a house positively affects house prices. Houses with more floors tend to have higher estimated prices. This suggests that multi-story houses are generally valued more than single-story houses.
+
+As the age of the house increases, the estimated price also increases. This could be due to factors such as historical significance or architectural value associated with older houses.
+
+Houses located on the waterfront have significantly higher estimated prices compared to houses that are not on the waterfront. Waterfront properties are considered desirable and tend to command higher prices due to the scenic views and potential for recreational activities.
+
+The Analysis has more insights on the other factors.
 
 # Conclusion
 
