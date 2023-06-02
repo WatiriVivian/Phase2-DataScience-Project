@@ -43,12 +43,15 @@ The analysis utilizes multiple linear regression, a powerful statistical techniq
 During the analysis, we developed and evaluated four models to gain insights and make predictions. Here is an overview of the models:
 
 **Model 1: Baseline Model**
+
 The baseline model included nearly all available feature variables. Categorical variables were converted into dummy variables for modeling purposes. We further refined the model by testing for linear assumptions, ensuring that the relationships between the predictors and the target variable followed a linear pattern.
 
 **Model 2: Feature Selection and Refinement**
+
 In the second model, we focused on addressing multicollinearity issues and high p-values associated with certain features. We identified and removed features with high multicollinearity to enhance the model's stability and interpretability. Additionally, we examined linearity assumptions by using partial regression plots and checked for outliers in both the target and predictor variables, subsequently removing any outliers identified.
 
 **Model 3: Assumption Testing and Transformation**
+
 For the third model, we conducted tests to verify key assumptions of linear regression. We assessed homoscedasticity using the Breusch-Pagan test, checked for normality through the Jarque-Bera test and the K-test, and examined the skewness of the target variable. To address skewness, we applied a logarithmic transformation to the target variable, aiming to reduce skewness and improve the model's performance.
 
 By building and refining these models, we aimed to explore different aspects of the data and address potential challenges such as multicollinearity, linearity assumptions, and outliers. The iterative modeling process allowed us to gain insights into the relationships between variables and identify the most appropriate approach for predicting house prices in the King County dataset.
